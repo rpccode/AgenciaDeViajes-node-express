@@ -1,10 +1,17 @@
 
 import express from  "express";
 import router from "./router/index.js";
+import db from './Config/db.js';
 
 
 const app = express()
 const port = process.env.port || 4000;
+
+//conectar a la base de datos
+db.authenticate()
+        .then( () => console.log('Base de Datos Conectada'))
+        .catch(error => console.log(error));
+
 
 // habilitar pug_style
 app.set('view engine', 'pug');
