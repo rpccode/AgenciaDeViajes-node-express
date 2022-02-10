@@ -6,8 +6,10 @@ const db = new  Sequelize('agenciaviajes', 'root','',{
         host: '127.0.0.1',
         port:'3306',
         dialect: 'mysql',
-        define: {
-            timestamp: false
+        define:{
+
+                 timestamps:false
+
         },
         pool: {
             max: 5,
