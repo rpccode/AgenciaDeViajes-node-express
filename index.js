@@ -27,6 +27,9 @@ app.use((req, res,next)=>{
     next();
 });
 
+//agregar BodyParse para leer los datos del usuario
+
+app.use(express.urlencoded({extended: true}));
 
 
 //agrega el router
