@@ -8,10 +8,9 @@ html(lang="en")
         link(rel="stylesheet", href="/css/style.css")
 
         title #{nombreSitio} | #{pagina}
-    body 
+    body(class=clase)
 
     include Header 
+    block slider
     block Contenido
-
-
     include Footer 

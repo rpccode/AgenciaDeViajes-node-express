@@ -7,7 +7,8 @@ const paginaInicio =(req, res) => {
     
     
     res.render('Inicio',{ 
-        pagina:'Inicio'
+        pagina:'Inicio',
+        clase: 'home'
     })
 
 };
