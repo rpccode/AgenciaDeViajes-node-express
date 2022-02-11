@@ -8,13 +8,25 @@ block slider
 
 block Contenido
        main.container.mt-5
-                h2.text-center.mb-5 Sobre Nosotros
-                .row.mb-5
-                    .col-md-6
-                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae maxime quidem eius! Ipsum amet odit eveniet cumque fugiat, asperiores nobis facere. Dolor nihil excepturi, beatae at qui quod illum perferendis                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magnam sequi non aliquid cum praesentium, voluptates provident blanditiis odio maxime beatae cupiditate reiciendis excepturi voluptate nisi quia aut quas laborum.
+                    h2.text-center.mb-5 Sobre Nosotros
+                    .row.mb-5
+                        .col-md-6
+                            p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae maxime quidem eius! Ipsum amet odit eveniet cumque fugiat, asperiores nobis facere. Dolor nihil excepturi, beatae at qui quod illum perferendis                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magnam sequi non aliquid cum praesentium, voluptates provident blanditiis odio maxime beatae cupiditate reiciendis excepturi voluptate nisi quia aut quas laborum.
 
-                        
-                        p  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur asperiores ipsam vel quia dicta corrupti non necessitatibus similique totam impedit! Sint nisi ab nobis, doloribus eveniet assumenda vero. Quos, itaque? 
-                    .col-md-6 
-                          img(src="/img/inicio_nosotros.jpg", alt="imagen nosotro" class="img-fluid")
-                include ./Layout/block_viajes          
+                            
+                            p  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequatur asperiores ipsam vel quia dicta corrupti non necessitatibus similique totam impedit! Sint nisi ab nobis, doloribus eveniet assumenda vero. Quos, itaque? 
+                        .col-md-6 
+                            img(src="/img/inicio_nosotros.jpg", alt="imagen nosotro" class="img-fluid")
+                    include ./Layout/block_viajes
+       .descuento 
+            .container 
+                .row 
+                     .col-md-6 
+                             .contenido
+                                    h3 5% De Descuento
+                                    p.titulo Viaje a Canada
+                                    p.fecha  20 de Marzo del 2022 - 28 de Marzo del 2022
+                                    p.precio $2,500 USD
+       .container
+            h2.mt-5.text-center Testimoniales
+            include ./Layout/block_testimoniales                            
