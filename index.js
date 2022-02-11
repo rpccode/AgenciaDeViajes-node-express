@@ -5,7 +5,7 @@ import db from './Config/db.js';
 
 
 const app = express()
-const port = process.env.port || 4000;
+
 
 //conectar a la base de datos
 db.authenticate()
@@ -38,4 +38,10 @@ app.use('/', router);
 //definir la carpeta publica
 app.use(express.static('public'));
 
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+// agregar puerto y host
+const port = process.env.PORT || 4000;
+const host = process.env.HOST || '0.0.0.0';
+
+
+
+app.listen(port,host, () => console.log(`El servidor esta funcionando ${port}!`))
